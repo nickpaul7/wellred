@@ -97,17 +97,34 @@ a:active {
 }
 
 .card {
-  width: 22%;
+  
+}
+
+.card-link:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Add a shadow effect on hover */
+ text-decoration: none;
+  color: inherit;
+}
+
+.card-link {
+flex: 1;
+width: 22%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
   margin: 2%; /* Add margin */
 cursor: pointer; /* This changes the mouse cursor to a hand when hovering over the card */
+
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent */
+  display: block; /* Makes the entire area clickable, not just the text */
 }
 
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Add a shadow effect on hover */
+.card-link:visited,
+.card-link:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card h2 {
@@ -118,7 +135,7 @@ cursor: pointer; /* This changes the mouse cursor to a hand when hovering over t
   font-size: 1em;
 }
 
-.card img {
+.card-link img {
   height:200px;
 
   margin-top: 10px;
